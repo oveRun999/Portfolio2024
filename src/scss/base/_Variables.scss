@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap");
+// =====================
+// Color
+// =====================
+
+// Main Color
+$color-main: #000 !default;
+$color-main-light: #999 !default;
+$color-main-bg: #f4f4f4 !default;
+$color-white: #fff !default;
+$color-Black: #000 !default;
+$color-link-text: #000 !default;
+
+//form
+$reqwired_text: #b95a14 !default;
+$reqwired_gb: #fff6dd !default;
+$nini_text: #5e6661 !default;
+$nini_bg: #e4e4e4 !default;
+
+// =====================
+// site-size
+// =====================
+$maxwidth: 1328px;
+$tabwidth: 1184px;
+$tab-minwidth: 769px;
+$spwidth: 560px;
+$contentWidth: 1140px;
+$contentMinWidth: 740px;
+
+// =====================
+// Font Family
+// =====================
+
+$fontFamily: "Helvetica Neue",
+Arial,
+"Hiragino Kaku Gothic ProN",
+"Hiragino Sans",
+Meiryo,
+sans-serif;
+
+// =====================
+// Font Size
+// =====================
+$titleH1: clamp(44px, 2vw, 88px) !default;
+$titleH2: clamp(28px, 2vw, 40px) !default;
+$titleH3: clamp(24px, 2vw, 32px) !default;
+$titleH4: clamp(22px, 2vw, 28px) !default;
+$titleH5: clamp(20px, 2vw, 24px) !default;
+$titleH6: clamp(18px, 2vw, 20px) !default;
+$textP__normal: clamp(14px, 2vw, 16px) !default;
+$textP__lead: clamp(16px, 2vw, 20px) !default;
+$textP__small: clamp(11px, 2vw, 12px) !default;
+$button__text: clamp(13px, 2vw, 14px) !default;
+
+// =====================
+// Transition time
+// =====================
+$transitionTime-hover: ease 0.5s;
+
+// =====================
+// Animation Keyframes
+// =====================
+@keyframes accordionArrowTurn {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes anime {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  20% {opacity: 1;}
+  25% {opacity: 0;transform: scale(1);z-index:9;}
+  100% {opacity: 0}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}

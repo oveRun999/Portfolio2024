@@ -1,0 +1,91 @@
+@use "../base/variables" as *;
+//--version2用
+.l-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: clamp(11px, 2vw, 12px);
+  padding: 16px 0;
+  background-color: #72a7a9;
+  color: #fff;
+}
+.p-pagetop {
+  z-index: 99;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 0 24px 0 16px;
+  min-width: auto;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  border: 1px solid $color-main;
+  -webkit-transition: background 0.2s, opacity 0.35s, -webkit-transform 0.35s;
+  transition: background 0.2s, opacity 0.35s, -webkit-transform 0.35s;
+  transition: background 0.2s, opacity 0.35s, transform 0.35s;
+  transition: background 0.2s, opacity 0.35s, transform 0.35s,
+    -webkit-transform 0.35s;
+  background: $color-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // &:hover {
+  //   background: #b0a8a8 !important;
+  // }
+  .sw-Button__Inner {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      position: absolute;
+      top: -10px;
+      left: -22px;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      width: 180%;
+      height: 150%;
+    }
+    .sw-Button__Text {
+      &::before {
+        content: "\e905";
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+  &:hover {
+    .sw-Button__Text {
+      &::before {
+        color: $color-main;
+      }
+    }
+  }
+  &.is-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  // &::after {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 12px;
+  //   height: 12px;
+  //   margin: auto;
+  //   font-family: "design_plus";
+  //   font-size: 12px;
+  //   content: "↑";
+  // }
+}

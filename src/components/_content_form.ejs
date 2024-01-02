@@ -1,0 +1,83 @@
+<!-- tl-Contents -->
+<section class="tl-Contents" id="form">
+  <div class="tl-Contents__Inner block">
+    <div class="tl-Contents__Title__area" aria-labelledby="projectsSection">
+      <h2 class="tl-Contents__Title__h2" id="projectsSection">お問い合わせ</h2>
+    </div>
+    <div class="tl-Contents__block">
+      <div class="tl-Contents__form">
+        <form name="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2pPVJG4vtmzlo5JxGD7cz9mlACNF31VF78Da-ISAdOwIVtA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+          <table class="tl-Contents__form__Table  js-hops">
+            <tr>
+              <th class="indispensable">お問い合わせ種別</th>
+              <td class="radioType">
+                <input type="radio" id="option1" name="entry.390311721" checked value="制作に関する内容">
+                <label for="option1">制作に関する内容</label><br>
+                <input type="radio" id="option2" name="entry.390311721" value="応募に関する内容">
+                <label for="option2">応募に関する内容</label><br>
+                <input type="radio" id="option3" name="entry.390311721" value="その他">
+                <label for="option3">その他</label><br>
+              </td>
+            </tr>
+            <tr>
+              <th class="indispensable">お名前</th>
+              <td><input type="text" class="fullname" name="entry.1576228141" placeholder="フルネームでご記入ください" required></td>
+            </tr>
+            <tr>
+              <th class="indispensable">お名前（フリガナ）</th>
+              <td><input type="text" class="kananame" name="entry.2091007520" placeholder="カタカナでフルネームにてご記入ください" required></td>
+            </tr>
+            <tr>
+              <th class="indispensable">メールアドレス</th>
+              <td><input type="email" class="email" name="entry.1142419056" placeholder="test@test.com" required></td>
+            </tr>
+            <tr>
+              <th class="ninni">郵便番号</th>
+              <td><label for="zipcode"></label>
+                <input type="text" id="zipcode" name="entry.1661691680" placeholder="1234567" maxlength="7">
+              </td>
+            </tr>
+            <tr>
+              <th class="ninni">ご住所</th>
+              <td><label for="address"></label>
+                <input type="text" id="address" placeholder="上記に郵便番号をご入力後表示された項目に追記してください" name="entry.551901256">
+              </td>
+            </tr>
+            <tr>
+              <th class="indispensable">お問い合わせ内容</th>
+              <td><textarea class="question" name="entry.1235755608" id="" placeholder="お問い合わせ内容を入力してください" cols="100" rows="10" required></textarea>
+              </td>
+            </tr>
+          </table>
+          <div class="tl-Contents__form__privacyText">
+            こちらはテスト用の問い合わせフォームです。　返信やリアクションなどは意図して行っていません。
+            ご了承の場合は下記チェックフォームにチェックしていただき、送信の方よろしくお願いします。
+          </div>
+          <div class="tl-Contents__formCheck"><label><input type="checkbox" name="entry.1999751199" class="privacycheck" value="個人情報保護方針に同意する" id="" required>上記の注意事項に同意する</label></div>
+          <div class="tl-Contents__formCheck_btnArea">
+            <input type="submit" id="checkBtn" class="sw-formButton js-modal-open" disabled data-modal-target="#modal2" value="お問い合せ内容を確認" />
+            <div role="modal" class="modal js-modal" id="modal2">
+
+
+              <div class="modal-container">
+                <div class="modal-content">
+                  <div class="modal-content__result" data-modal-target="formItem">
+                  </div>
+                  <button class="modal-close js-modal-close">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <script type="text/javascript">
+          const submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<!-- tl-Contents -->

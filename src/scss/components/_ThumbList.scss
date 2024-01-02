@@ -1,0 +1,539 @@
+@use "../base/variables" as *;
+// =====================
+//   tl-Contents
+// =====================
+.tl-Contents {
+  //max-width: $maxwidth;
+  margin: 160px auto;
+  overflow: hidden;
+  @media screen and (max-width: $tabwidth) {
+    width: 100%;
+    margin: 60px auto;
+  }
+  &.bg_nyantaros{
+    //position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    animation: fadeIn linear both;
+    animation-timeline: view(block);
+    animation-range: entry 25% cover 50%;
+    .tl-Contents__Inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-height: 450px;
+
+      video{
+        width: 100%;
+      }
+    }
+  }
+  &__Inner {
+    &.--titleArea {
+      margin: 0 0 0 56px;
+      @media screen and (max-width: $maxwidth) {
+        margin: 0;
+      }
+    }
+  }
+  &__Title {
+    &__h2 {
+      max-width: $maxwidth;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      font-size: $titleH3;
+      line-height: 1.6;
+      font-weight: bold;
+      color: #72a7a9;
+      @media screen and (max-width: $tabwidth) {
+        margin-bottom: 20px;
+      }
+    }
+    &__h2b {
+      color: $color-main;
+      margin-bottom: 16px;
+      font-size: $titleH2;
+      font-weight: bold;
+      @media screen and (max-width: $tab-minwidth) {
+        margin-bottom: 30px;
+      }
+    }
+    &__h3 {
+      font-size: $titleH3;
+      font-weight: bold;
+      line-height: 2;
+      &__sub {
+        //margin: 0 0 0 56px;
+        font-size: $titleH5;
+        line-height: 2;
+        @media screen and (max-width: $tabwidth) {
+          //margin: 0 0 0 4%;
+        }
+      }
+    }
+    &__area{
+      padding: 0 56px;
+      @media screen and (max-width: $tabwidth) {
+        padding: 0 4%;
+      }
+    }
+  }
+  &__form{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 740px;
+    @media screen and (max-width: $tab-minwidth) {
+      padding: 0 4%;
+    }
+    &Check{
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      
+      input{
+        margin-right: 5px;
+      }
+      label{
+        cursor: pointer;
+      }
+      &_btnArea{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+      }
+    }
+    &__privacyText{
+      font-size: $button__text;
+      max-width: 676px;
+      width: 100%;
+      margin: 32px auto 16px;
+      line-height: 1.7;
+      @media screen and (max-width: $tab-minwidth) {
+        padding: 32px 0;
+        margin: 0;
+      }
+      a{
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &__Table{
+      max-width: 740px;
+      width: 100%;
+      tr{
+        border-top: 1px solid #00000020;
+        display: block;
+        padding: 22px 12px;
+        @media screen and (max-width: $tab-minwidth) {
+          display: flex;
+          flex-direction: column;
+        }
+        &:first-of-type{
+          border-top: none;
+          th{
+            vertical-align: baseline;
+          }
+        }
+        &:last-of-type{
+          th{
+            vertical-align: baseline;
+          }
+        }
+      }
+      th{
+        min-width: 220px;
+        text-align: left;
+        @media screen and (max-width: $tab-minwidth) {
+          margin-bottom: 24px;
+        }
+        &.indispensable {
+          &::after {
+            content: '必須';
+            background-color: $reqwired_gb;
+            color: $reqwired_text;
+            padding: 1px 4px;
+            font-size: $textP__small;
+            margin-left: 8px;
+          }
+        }
+
+        &.ninni {
+          &::after {
+            content: '任意';
+            background-color: $nini_bg;
+            color: $nini_text;
+            padding: 1px 4px;
+            font-size: $textP__small;
+            margin-left: 8px;
+          }
+        }
+      }
+      td{
+        max-width: 550px;
+        width: 100%;
+        &.radioType{
+          width: auto;
+        }
+      }
+    }
+    input,textarea{
+      width: inherit;
+      border: 1px solid rgba(0, 0, 0, 0.1254901961);
+      padding: 12px;
+      font-size: $button__text;
+      accent-color:$color-main;
+      line-height: 1.5;
+      &.errorStatus {
+        border: 2px solid red;
+      }
+    }
+  }
+  &__datail{
+    &__Area{
+      max-width: 740px;
+      margin: 0 auto;
+      @media screen and (max-width: $tab-minwidth) {
+        margin: 0 4%;
+      }
+      h1,h2,h3,h4,h5,h6{
+        font-weight: bold;
+      }
+
+      h1{
+        font-size: $titleH2;
+
+      }
+      h2{
+        font-size: $titleH3;
+        margin-top: 56px;
+      }
+      h3{
+        font-size: $titleH4;
+        margin-top: 48px;
+      }
+      h4{
+        font-size: $titleH5;
+        margin-top: 40px;
+      }
+      h5{
+        font-size: $titleH6;
+        margin-top: 32px;
+      }
+      h6{
+        font-size: $titleH6;
+        margin-top: 28px;
+      }
+      p{
+        margin-top: 16px;
+        &:has(img){
+          text-align: center;
+        }
+      }
+      img{
+        max-width: 100%;
+        text-align: center;
+        +img{
+          margin-top: 16px;
+        }
+      }
+    }
+    &__title{
+      margin-bottom: 56px;
+    }
+    &__time{
+      color: $color-main-light;
+    }
+  }
+  &__profile {
+    z-index: 12;
+    //position: fixed;
+    width: 100%;
+    transition: ease 0.5s;
+    &.tl-Contents{
+      margin: 0 auto;
+      padding: 100px 4%;
+      max-width: initial;
+      background-color: #ddeeef;
+      @media screen and (max-width: $tabwidth) {
+        padding: 60px 4%;
+      }
+    }
+    &__title{
+      font-size: $titleH5;
+      font-weight: bold;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #333;
+    }
+    &__wrapper{
+      display: flex;
+    justify-content: center;
+    gap: 56px;
+    max-width: $maxwidth;
+    margin: 0 auto;
+    @media screen and (max-width: $tab-minwidth) {
+        flex-direction: column;
+      }
+    }
+    &__photo{
+      max-width: 260px;
+      @media screen and (max-width: $tab-minwidth) {
+        max-width: initial;
+      }
+      img{
+        width: 100%;
+      }
+      blockquote {
+        font-size: $textP__small;
+      }
+    }
+    &__text {
+      max-width: 480px;
+      width: 50%;
+      @media screen and (max-width: $tab-minwidth) {
+        max-width: initial;
+        width: 100%;
+      }
+    }
+  }
+  &__plan {
+    list-style: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+
+    &__item {
+      display: flex;
+      border-left: 1px solid $color-main-light;
+      &:last-of-type {
+        border-left: none;
+      }
+    }
+
+    &__circle {
+      margin-left: -9px;
+      position: relative;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        background: #fff;
+        border: 1px solid $color-main-light;
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        outline: 4px solid #ddeeef;
+      }
+    }
+
+    &__textbox {
+      display: flex;
+      width: 100%;
+      margin-left: 30px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      min-height: 54px;
+      padding-bottom: 20px;
+      flex-direction: column;
+      .tl-Contents__plan__item:last-of-type & {
+        min-height: auto;
+        padding-bottom: 0;
+      }
+    }
+
+    &__text {
+      margin-top: -5px;
+      .--lp &{
+        font-weight: bold;
+        margin-top: -7px;
+      }
+    }
+
+    &__subtext{
+      font-size: $textP__small;
+    }
+
+    &__time {
+      color: $color-main-light;
+      font-size: $textP__small;
+      margin-left: 10px;
+      @media screen and (max-width: $tabwidth) {
+        display: block;
+        margin-left: 0;
+      }
+    }
+  }
+  &__Qualifications{
+    list-style: disc;
+    padding-left: 1.5rem;
+    &__textbox {
+      display: flex;
+      width: 100%;
+      
+      vertical-align: middle;
+      padding-bottom: 10px;
+      flex-direction: column;
+      .tl-Contents__plan__item:last-of-type & {
+        min-height: auto;
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__form{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 740px;
+    @media screen and (max-width: $tab-minwidth) {
+      padding: 0 4%;
+    }
+    &Check{
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      
+      input{
+        margin-right: 5px;
+      }
+      label{
+        cursor: pointer;
+      }
+      &_btnArea{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+      }
+    }
+    &__privacyText{
+      font-size: $textP__normal;
+      max-width: 676px;
+      width: 100%;
+      margin: 32px auto 16px;
+      line-height: 1.7;
+      @media screen and (max-width: $tab-minwidth) {
+        padding: 32px 0;
+        margin: 0;
+      }
+      a{
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    &__Table{
+      max-width: 740px;
+      width: 100%;
+      tr{
+        border-top: 1px solid #00000020;
+        display: block;
+        padding: 22px 12px;
+        @media screen and (max-width: $tab-minwidth) {
+          display: flex;
+          flex-direction: column;
+        }
+        &:first-of-type{
+          border-top: none;
+          th{
+            vertical-align: baseline;
+          }
+        }
+        &:last-of-type{
+          th{
+            vertical-align: baseline;
+          }
+        }
+      }
+      th{
+        min-width: 220px;
+        text-align: left;
+        @media screen and (max-width: $tab-minwidth) {
+          margin-bottom: 24px;
+        }
+        &.indispensable {
+          &::after {
+            content: '必須';
+            background-color: $reqwired_gb;
+            color: $reqwired_text;
+            padding: 1px 4px;
+            font-size: $textP__small;
+            margin-left: 8px;
+          }
+        }
+
+        &.ninni {
+          &::after {
+            content: '任意';
+            background-color: $nini_bg;
+            color: $nini_text;
+            padding: 1px 4px;
+            font-size: $textP__small;
+            margin-left: 8px;
+          }
+        }
+      }
+      td{
+        max-width: 550px;
+        width: 100%;
+        &.radioType{
+          width: auto;
+        }
+      }
+    }
+    input,textarea{
+      width: inherit;
+      border: 1px solid rgba(0, 0, 0, 0.1254901961);
+      padding: 12px;
+      font-size: $textP__normal;
+      accent-color:$color-main;
+      line-height: 1.5;
+      &.errorStatus {
+        border: 2px solid red;
+      }
+    }
+    .sw-formButton{
+      width: 100%;
+    }
+  }
+}
+
+.tl-ContentsSwiper {
+  margin: 100px auto;
+  @media screen and (max-width: $tab-minwidth) {
+    margin: 60px auto;
+  }
+  @media screen and (min-width: $tabwidth) {
+    
+    .swiper__inner{
+      padding: 0 4%;
+    }
+    .swiper-wrapper{
+      max-width: $maxwidth;
+      display: flex;
+      gap: 26px;
+      flex-wrap: wrap;
+      &::after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .swiper-slide{
+        max-width: 317px;
+        width: calc(25% - 20px);
+        float: left;
+        margin: 0 ;
+        position: relative;
+        overflow: hidden;
+        transition: ease 0.5s;
+        cursor: pointer;
+    .slide{
+      opacity: 1;
+    }
+      }
+    }
+  }
+}

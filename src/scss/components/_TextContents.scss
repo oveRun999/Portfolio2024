@@ -1,0 +1,412 @@
+// @use "../base/variables" as *;
+// .tc-KvContainer {
+//   &__catchArea {
+//     //transform: rotateZ(-180deg);
+//     text-align: right;
+//     width: 920px;
+//     margin: 0 auto;
+//   }
+//   &__catchCopy {
+//     font-weight: bold;
+//   }
+// }
+
+// .tc-Kv_underB__title {
+//   font-size: $fontSize40;
+//   font-weight: bold;
+//   line-height: 1.4;
+// }
+
+// .tc-Kv_underC__title {
+//   font-weight: bold;
+//   line-height: 1.4;
+// }
+
+// .tc-ProductMegaMenu {
+//   z-index: 0;
+//   &__Text {
+//     font-size: $fontSize-5l;
+//     color: $color-main;
+//     font-weight: bold;
+//   }
+//   &__Title {
+//     font-size: $fontSize-2s;
+//     font-weight: bold;
+//     color: $color-main;
+//   }
+//   &__dec {
+//   }
+// }
+// .--textCenter {
+//   text-align: center;
+// }
+// .tc-serviceMenu {
+//   &__subTitle {
+//     font-size: 12px;
+//     color: $color-main;
+//     margin-bottom: 8px;
+//   }
+//   &__Title {
+//     margin-bottom: 8px;
+//     font-size: 20px;
+//     font-weight: bold;
+//   }
+//   &__dec {
+//     font-size: 14px;
+//   }
+//   &__Text {
+//     color: $color-main;
+//   }
+// }
+
+// .tc-AboutClm {
+//   &__Title {
+//     font-weight: bold;
+//     line-height: 1.4;
+//     overflow-wrap: break-word;
+//     margin-bottom: 28px;
+//   }
+//   &__Text {
+//     font-size: $fontSize-2l;
+//   }
+// }
+// .st-SinglePage {
+//   .st-Container__inner {
+//     h1 {
+//       margin-top: 32px;
+//       font-size: 32px;
+//       font-weight: bold;
+//       + p {
+//         margin-top: 16px;
+//         + h2 {
+//           margin-top: 16px;
+//         }
+//       }
+//       &:first-child {
+//         margin-top: 0;
+//       }
+//     }
+//     h2 {
+//       font-size: 24px;
+//       color: $color-main;
+//       + p {
+//         margin-top: 12px;
+//       }
+//     }
+//     blockquote {
+//       margin: 12px 0 0;
+//       margin-top: 12px;
+//       font-size: 14px;
+//       padding: 32px;
+//       background-color: #e6f1f8;
+//     }
+//   }
+// }
+
+// .tc-Content {
+//   &__Area {
+//   }
+//   &__subTitle {
+//   }
+//   &__subTitleText {
+//     font-size: $fontSize20;
+//   }
+//   &__subTitleText2 {
+//     font-size: $fontSize-5l;
+//     font-weight: bold;
+//   }
+// }
+
+// .tc-TitleH2 {
+//   font-size: $fontSize-10l;
+//   font-weight: bold;
+//   margin: -16px 0;
+//   i {
+//     color: #c40e23;
+//     font-style: normal;
+//   }
+//   strong {
+//     color: $color-main;
+//     font-style: normal;
+//     font-weight: bold;
+//   }
+// }
+// .tc-TitleH3 {
+//   font-size: $fontSize-10l;
+//   font-weight: bold;
+// }
+// .tc-TitleH4 {
+//   font-size: $fontSize20;
+//   font-weight: bold;
+// }
+// .tc-MainText {
+//   p {
+//     font-size: $fontSize40;
+//     line-height: 1.6;
+//     font-weight: bold;
+//     margin-top: -14px;
+//     margin-bottom: -10px;
+//     strong {
+//       color: $color-main;
+//       font-style: normal;
+//       font-weight: bold;
+//     }
+//     i {
+//       color: #c40e23;
+//       font-style: normal;
+//     }
+//   }
+//   font-size: $fontSize40;
+//   line-height: 1.6;
+//   font-weight: bold;
+//   strong {
+//     color: $color-main;
+//     font-style: normal;
+//     font-weight: bold;
+//   }
+//   i {
+//     color: #c40e23;
+//     font-style: normal;
+//   }
+// }
+// .tc-Discription-text {
+//   font-size: $fontSize11;
+// }
+// .tc-leadText {
+//   font-size: $fontSize-2l;
+//   max-width: $contentMinWidth;
+//   &:last-of-type {
+//     margin-bottom: 0;
+//   }
+//   + .tc-leadText {
+//     margin-top: 24px;
+//   }
+//   p + p {
+//     margin-top: 16px;
+//   }
+// }
+// .tc-normalText {
+//   + .tc-normalText {
+//     margin-top: 24px;
+//   }
+// }
+// .--textWhite {
+//   color: $color-white;
+// }
+// .--textMainBlue {
+//   color: $color-main;
+// }
+// .--textMainBlue {
+//   color: $color-main;
+// }
+// .--textBlue {
+//   color: $color-main;
+// }
+// .--textWhite {
+//   color: $color-white;
+// }
+// .--textBlueGrade {
+//   display: inline-block;
+//   background: linear-gradient(
+//     180deg,
+//     rgba(1, 70, 135, 1) 0%,
+//     rgba(1, 106, 179, 1) 100%
+//   );
+//   background: -webkit-linear-gradient(
+//     -90deg,
+//     rgba(1, 70, 135, 1) 0%,
+//     rgba(1, 106, 179, 1) 100%
+//   );
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+// .--textRedGrade {
+//   display: inline-block;
+//   background: linear-gradient(
+//     180deg,
+//     rgba(195, 13, 35, 1) 0%,
+//     rgba(216, 52, 28, 1) 100%
+//   );
+//   background: -webkit-linear-gradient(
+//     -90deg,
+//     rgba(195, 13, 35, 1) 0%,
+//     rgba(216, 52, 28, 1) 100%
+//   );
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// .--textNewsLinkBlue {
+//   color: $color-link-news;
+// }
+// // =====================
+// //   ArticleTitle
+// // =====================
+// .st-ArticleTitle {
+//   margin-bottom: 16px;
+
+//   &_Title {
+//     color: $color-sub-dark;
+//     font-weight: bold;
+//     line-height: 1.4;
+//     overflow-wrap: break-word;
+//     margin-bottom: 28px;
+//   }
+
+//   &_Meta {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &_MetaItem {
+//     flex-shrink: 0;
+//   }
+//   &_MetaItem:not(:first-of-type) {
+//     margin-left: 32px;
+//   }
+
+//   &_Sns {
+//     display: flex;
+//     align-items: center;
+//   }
+//   &_SnsTitle {
+//     font-size: $fontSize-2l;
+//     color: $color-sub-dark;
+//   }
+//   &_SnsIcon {
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+//     margin-left: 16px;
+//     transition: $transitionTime-hover;
+//     img {
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//     }
+//     &:hover {
+//       opacity: 0.8;
+//     }
+//   }
+
+//   &_PubDate {
+//     font-size: $fontSize-4l;
+//     color: $color-sub-light;
+//   }
+// }
+// @media screen and (max-width: $maxwidth) {
+// }
+// @media screen and (max-width: $tabwidth) {
+//   .tc-KvContainer {
+//     &__catchArea {
+//       //transform: rotateZ(-180deg);
+//       text-align: center;
+//       width: 100%;
+//       margin: 0 auto;
+//       overflow: initial;
+//     }
+//     &__catchCopy {
+//       font-size: $fontSize-8l;
+//       line-height: 1.4;
+//       font-weight: bold;
+//     }
+//   }
+//   .tc-Kv_underC__title {
+//     font-size: $fontSize-5l;
+//   }
+//   .tc-TitleH2 {
+//     font-size: $fontSize-6lb;
+//     font-weight: bold;
+//     margin: -16px 0;
+//   }
+//   .tc-TitleH3 {
+//     font-weight: bold;
+//   }
+//   .tc-TitleH4 {
+//     font-size: 16px;
+//     font-weight: bold;
+//   }
+//   .tc-Content {
+//     &__Area {
+//     }
+//     &__subTitle {
+//       font-size: $fontSize11;
+//     }
+//     &__subTitleText {
+//       font-size: $fontSize11;
+//     }
+//     &__subTitleText2 {
+//       font-size: $fontSize-2s;
+//     }
+//   }
+//   .tc-MainText {
+//     p {
+//       font-size: $fontSize-5l;
+//       line-height: 1.6;
+//       font-weight: bold;
+//       margin-top: 0;
+//       margin-bottom: 0;
+//     }
+//     font-size: $fontSize-5l;
+//     line-height: 1.6;
+//     font-weight: bold;
+//     margin-bottom: 0;
+//   }
+//   .tc-leadText {
+//     font-size: $fontSize18;
+//     max-width: none;
+//     &:last-of-type {
+//       margin-bottom: 0;
+//     }
+//     p + p {
+//       margin-top: 16px;
+//     }
+//   }
+//   .tc-Discription-text {
+//     //font-size: $fontSize11s;
+//   }
+//   .tc-Kv_underB__title {
+//     font-size: $fontSize-4l;
+//   }
+//   .st-SinglePage {
+//     .st-Container__inner {
+//       h1 {
+//         font-size: 24px;
+//         + p {
+//           + h2 {
+//           }
+//         }
+//         &:first-child {
+//         }
+//       }
+//       h2 {
+//         font-size: 20px;
+//         + p {
+//           margin-top: 12px;
+//         }
+//       }
+//       blockquote {
+//       }
+//     }
+//   }
+//   .tc-serviceMenu {
+//     &__subTitle {
+//       font-size: 11px;
+//       color: $color-main;
+//       margin-bottom: 8px;
+//     }
+//     &__Title {
+//       margin-bottom: 8px;
+//       font-size: 16px;
+//       font-weight: bold;
+//     }
+//     &__dec {
+//       font-size: 14px;
+//     }
+//     &__Text {
+//       color: $color-main;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: $spwidth) {
+// }

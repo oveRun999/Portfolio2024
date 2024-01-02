@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <title>
+    <%= data.home.title %>
+  </title>
+
+  <%- include('./components/parts/_common_head'); %>
+
+</head>
+
+<body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KV4KXB26EX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KV4KXB26EX');
+  </script>
+    <%- include('./components/_header--portfolio'); %>
+    <%- include('./components/parts/_KvContainerLP'); %>
+    <%- include('./components/_content2'); %>
+    <%- include('./components/_content3'); %>
+    <%- include('./components/_content_form'); %>
+    <%- include('./components/_content1'); %>
+    <%- include('./components/_footer--portfolio'); %>
+</body>
+
+</html>
